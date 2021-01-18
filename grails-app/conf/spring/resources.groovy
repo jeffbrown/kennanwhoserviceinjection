@@ -1,3 +1,7 @@
-// Place your Spring DSL code here
+import kennanwhoserviceinjection.APIPaymentCreateCommand
+
 beans = {
+    aPIPaymentCreateCommand(APIPaymentCreateCommand) { bean ->
+        bean.autowire = 'byName'
+    }
 }
